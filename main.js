@@ -1,77 +1,50 @@
-//Create a reference for canvas 
 
-//Give specific height and width to the car image
+// Create canvas variable
+ block_y=1;
+ block_x=1;
 
-background_image = "parkingLot.jpg";
-greencar_image = "car2.png";
+block_image_width = 350;
+block_image_height = 430;
 
-//Set initial position for a car image.
+var block_image_object= "";
 
-function add() {
-	//upload car, and background images on the canvas.
+function new_image(get_image)
+{
+	// to upload images
 }
-
-function uploadBackground() {
-	//Define function ‘uploadBackground’
-
-}
-
-function uploadgreencar() {
-	//Define function ‘uploadgreencar’.
-
-	
-}
-
 
 window.addEventListener("keydown", my_keydown);
 
 function my_keydown(e)
 {
-	keyPressed = e.keyCode;
-	console.log(keyPressed);
-		if(keyPressed == '38')
-		{
-			up();
-			console.log("up");
-		}
+keyPressed = e.keyCode;
+console.log(keyPressed);
+
+	if(keyPressed == '?') // add appropriate keycode
+	{
+		// upload red ranger
+	}
+	if(keyPressed == '71')
+	{
+		block_x = 200;
+		// upload green ranger
+	}
 	
-		if(keyPressed == '40')
-		{
-			down();
-			console.log("down");
-		}
-		
-		if(keyPressed == '37')
-		{
-			left();
-			console.log("left");
-		}
+	if(keyPressed == '89')
+	{
+		block_x =350;
+		// upload yellow ranger
+	}
+	if(keyPressed == '80')
+	{
+		block_x = 600;
+		// upload pink ranger
+	}
+	if(keyPressed == '66')
+	{
+		block_x = 700;
+	// upload blue ranger
+	}
 	
-		if(keyPressed == '39')
-		{
-			right();
-			console.log("right");
-		}
-		
-		
 }
 
-function up()
-{
-	//Define function to move the car upward
-}
-
-function down()
-{
-	//Define function to move the car downward
-}
-
-function left()
-{
-	//Define function to move the car left side
-}
-
-function right()
-{
-	//Define function to move the car right side
-}
